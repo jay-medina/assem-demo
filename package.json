@@ -1,0 +1,28 @@
+{
+  "name": "assem-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayem9000/assem-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayem9000/assem-demo/issues"
+  },
+  "homepage": "https://github.com/jayem9000/assem-demo#readme",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.17.11"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.17.11"
+  }
+}
